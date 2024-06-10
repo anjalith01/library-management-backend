@@ -1,0 +1,10 @@
+const User=require('../Models/users')
+const express=require('express')
+const app = express()
+const router=express.Router()
+router.post('/register',async(req,res)=>{
+    // const user=await User.find({email:req.body.email})
+    console.log("user........")
+    console.log(req.body)
+    res.send("register successfully")
+})
